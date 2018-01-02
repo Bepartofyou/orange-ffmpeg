@@ -1,0 +1,14 @@
+prefix=/home/wupengqiang/work/av-part/ffmpeg/ffmpeg-libs/static/ffmpeg
+exec_prefix=${prefix}
+libdir=/home/wupengqiang/work/av-part/ffmpeg/ffmpeg-libs/static/ffmpeg/lib
+includedir=/home/wupengqiang/work/av-part/ffmpeg/ffmpeg-libs/static/ffmpeg/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 55.78.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -lrt -lm
+Libs.private: 
+Cflags: -I${includedir}

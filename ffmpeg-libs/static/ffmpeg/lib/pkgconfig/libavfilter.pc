@@ -1,0 +1,14 @@
+prefix=/home/wupengqiang/work/av-part/ffmpeg/ffmpeg-libs/static/ffmpeg
+exec_prefix=${prefix}
+libdir=/home/wupengqiang/work/av-part/ffmpeg/ffmpeg-libs/static/ffmpeg/lib
+includedir=/home/wupengqiang/work/av-part/ffmpeg/ffmpeg-libs/static/ffmpeg/include
+
+Name: libavfilter
+Description: FFmpeg audio/video filtering library
+Version: 6.107.100
+Requires: libswscale >= 4.8.100, libpostproc >= 54.7.100, libavformat >= 57.83.100, libavcodec >= 57.107.100, libswresample >= 2.9.100, libavutil >= 55.78.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavfilter -lxcb -lxcb-shm -lxcb -lxcb-xfixes -lxcb-render -lxcb-shape -lxcb -lxcb-shape -lxcb -lasound -L/home/wupengqiang/work/av-part/ffmpeg/ffmpeg-libs/static/x264/lib -lx264 -lpthread -lm -ldl -L/home/wupengqiang/work/av-part/ffmpeg/ffmpeg-libs/static/fdk-aac/lib -lfdk-aac -lm -lm -ldl -lbz2 -lz -pthread -pthread -lrt
+Libs.private: 
+Cflags: -I${includedir}

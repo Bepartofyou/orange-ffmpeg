@@ -1,0 +1,14 @@
+prefix=/home/wupengqiang/work/av-part/ffmpeg/ffmpeg-libs/shared/ffmpeg
+exec_prefix=${prefix}
+libdir=/home/wupengqiang/work/av-part/ffmpeg/ffmpeg-libs/shared/ffmpeg/lib
+includedir=/home/wupengqiang/work/av-part/ffmpeg/ffmpeg-libs/shared/ffmpeg/include
+
+Name: libpostproc
+Description: FFmpeg postprocessing library
+Version: 54.7.100
+Requires: 
+Requires.private: libavutil >= 55.78.100
+Conflicts:
+Libs: -L${libdir}  -lpostproc 
+Libs.private: 
+Cflags: -I${includedir}

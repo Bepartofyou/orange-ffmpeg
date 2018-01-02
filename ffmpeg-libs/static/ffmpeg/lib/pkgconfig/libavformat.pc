@@ -1,0 +1,14 @@
+prefix=/home/wupengqiang/work/av-part/ffmpeg/ffmpeg-libs/static/ffmpeg
+exec_prefix=${prefix}
+libdir=/home/wupengqiang/work/av-part/ffmpeg/ffmpeg-libs/static/ffmpeg/lib
+includedir=/home/wupengqiang/work/av-part/ffmpeg/ffmpeg-libs/static/ffmpeg/include
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 57.83.100
+Requires: libavcodec >= 57.107.100, libswresample >= 2.9.100, libavutil >= 55.78.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavformat -lxcb -lxcb-shm -lxcb -lxcb-xfixes -lxcb-render -lxcb-shape -lxcb -lxcb-shape -lxcb -lasound -L/home/wupengqiang/work/av-part/ffmpeg/ffmpeg-libs/static/x264/lib -lx264 -lpthread -lm -ldl -L/home/wupengqiang/work/av-part/ffmpeg/ffmpeg-libs/static/fdk-aac/lib -lfdk-aac -lm -lm -ldl -lbz2 -lz -pthread -pthread -lrt
+Libs.private: 
+Cflags: -I${includedir}
