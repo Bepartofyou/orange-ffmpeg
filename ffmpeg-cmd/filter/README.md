@@ -1,4 +1,8 @@
-# ffmpeg filters
+## ffmpeg filters
+
+Just show filter using, you can get detail infomation in http://ffmpeg.org/ffmpeg-all.html by searching corresponding filter key words.
+
+-------------------------
 
 * border   `图片添加边框`
 
@@ -10,4 +14,6 @@
 
       ../../ffmpeg-libs/static/ffmpeg/bin/ffmpeg  -i ./resource/color.png  -filter_complex "colorchannelmixer=.3:.4:.3:0:.3:.4:.3:0:.3:.4:.3" -y grey.png
 
-* 
+* fade `淡入淡出`
+
+      ../../ffmpeg-libs/static/ffmpeg/bin/ffmpeg -i ./resource/input.mp4 -vf "fade=in:0:50,fade=out:450:50" -vcodec libx264 -r 25 -g 25 -y output.mp4
