@@ -20,6 +20,9 @@ add_definitions(-std=c++0x -g -Wall
 -D__STDC_FORMAT_MACROS
 -D_CRT_SECURE_NO_WARNINGS
 )
+if(UNIX)
+	add_definitions(-Wno-deprecated -Wdeprecated-declarations)
+endif(UNIX)
 
 # include   -I
 include_directories(
@@ -73,14 +76,14 @@ if(WIN32)
 		)
 else(WIN32)
 	target_link_libraries(hello 
-		yuv 
-		avcodec 
-		avdevice 
-		avfilter 
-		avformat 
-		avutil 
-		postproc 
-		swresample 
+		yuv
+		avformat
+		avdevice
+		avcodec
+		avutil
+		avfilter
+		postproc
+		swresample
 		swscale
 		fdk-aac 
 		x264
