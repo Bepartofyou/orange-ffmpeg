@@ -1,0 +1,14 @@
+prefix=/Users/bepartofyou/work/av/git.bepartofyou.com/orange-ffmpeg/ffmpeg-libs/darwin/ffmpeg
+exec_prefix=${prefix}
+libdir=/Users/bepartofyou/work/av/git.bepartofyou.com/orange-ffmpeg/ffmpeg-libs/darwin/ffmpeg/lib
+includedir=/Users/bepartofyou/work/av/git.bepartofyou.com/orange-ffmpeg/ffmpeg-libs/darwin/ffmpeg/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 55.78.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -lm
+Libs.private: 
+Cflags: -I${includedir}

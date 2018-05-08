@@ -1,0 +1,14 @@
+prefix=/Users/bepartofyou/work/av/git.bepartofyou.com/orange-ffmpeg/ffmpeg-libs/darwin/ffmpeg
+exec_prefix=${prefix}
+libdir=/Users/bepartofyou/work/av/git.bepartofyou.com/orange-ffmpeg/ffmpeg-libs/darwin/ffmpeg/lib
+includedir=/Users/bepartofyou/work/av/git.bepartofyou.com/orange-ffmpeg/ffmpeg-libs/darwin/ffmpeg/include
+
+Name: libswresample
+Description: FFmpeg audio resampling library
+Version: 2.9.100
+Requires: libavutil >= 55.78.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lswresample -lm
+Libs.private: 
+Cflags: -I${includedir}
